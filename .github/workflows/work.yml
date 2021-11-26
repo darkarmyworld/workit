@@ -21,6 +21,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Lets do it
         run: |
-          git clone https://${{ secrets.MT }}@darkarmyworld@github.com/darkarmyworld/work
+          git clone https://${{secrets.MT}}@darkarmyworld@github.com/darkarmyworld/work
           pip3 install mega.py
           cd work;python3 login.py
